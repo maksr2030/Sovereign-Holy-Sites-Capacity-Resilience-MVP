@@ -10,7 +10,7 @@ Public operational demonstration of a sovereign decision-intelligence platform f
 All values shown in the public MVP are simulated for demonstration purposes. They do not represent field measurements, approved operating limits, or statutory values. The complete 220-feature engineering register, proprietary algorithms, training models, and protected implementation details are intentionally excluded from this public repository.
 
 ## Public Operational Demo
-https://holy-sites-capacity-resilience-qb9avqfw7.vercel.app
+https://sovereign-holy-sites-capacity-resilience-mvp.vercel.app
 
 ## Repository and Deployment Architecture
 
@@ -18,9 +18,7 @@ https://holy-sites-capacity-resilience-qb9avqfw7.vercel.app
 
 **Vercel is the public deployment layer.** The repository is connected to Vercel so approved changes pushed to the `main` branch trigger automatic deployments.
 
-Automatic Git-to-Vercel deployment was verified on 2026-08-21. Commit `79411367a1f17a81f4eae163ec40886a1c2522da` produced successful Vercel deployment status checks for the connected project.
-
-The legacy duplicate Vercel project was disconnected from Git on 2026-08-21. The canonical Git-connected deployment project is `sovereign-holy-sites-capacity-resilience-mvp`.
+Automatic Git-to-Vercel deployment is verified. The legacy duplicate Vercel project was disconnected from Git, and the canonical Git-connected deployment project is `sovereign-holy-sites-capacity-resilience-mvp`.
 
 The repository includes automated validation that verifies required files, JavaScript syntax, Vercel configuration, and core operational wiring on updates to `main`.
 
