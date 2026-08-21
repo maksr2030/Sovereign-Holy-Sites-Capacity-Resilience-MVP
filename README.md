@@ -16,7 +16,9 @@ https://holy-sites-capacity-resilience-qb9avqfw7.vercel.app
 
 **GitHub is the public source-of-truth and development-history record for this MVP.**
 
-**Vercel is the public deployment layer.** The repository is connected to Vercel so approved changes pushed to the `main` branch can trigger automatic deployments.
+**Vercel is the public deployment layer.** The repository is connected to Vercel so approved changes pushed to the `main` branch trigger automatic deployments.
+
+Automatic Git-to-Vercel deployment was verified on 2026-08-21. Commit `79411367a1f17a81f4eae163ec40886a1c2522da` produced successful Vercel deployment status checks for the connected project.
 
 The repository includes automated validation that verifies required files, JavaScript syntax, Vercel configuration, and core operational wiring on updates to `main`.
 
