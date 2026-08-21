@@ -20,6 +20,8 @@ https://holy-sites-capacity-resilience-qb9avqfw7.vercel.app
 
 Automatic Git-to-Vercel deployment was verified on 2026-08-21. Commit `79411367a1f17a81f4eae163ec40886a1c2522da` produced successful Vercel deployment status checks for the connected project.
 
+The legacy duplicate Vercel project was disconnected from Git on 2026-08-21. The canonical Git-connected deployment project is `sovereign-holy-sites-capacity-resilience-mvp`.
+
 The repository includes automated validation that verifies required files, JavaScript syntax, Vercel configuration, and core operational wiring on updates to `main`.
 
 ## Operational capabilities demonstrated
