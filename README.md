@@ -12,6 +12,14 @@ All values shown in the public MVP are simulated for demonstration purposes. The
 ## Public Operational Demo
 https://holy-sites-capacity-resilience-qb9avqfw7.vercel.app
 
+## Repository and Deployment Architecture
+
+**GitHub is the public source-of-truth and development-history record for this MVP.**
+
+**Vercel is the public deployment layer.** The repository is structured for direct Vercel Git integration so approved changes to the `main` branch can be deployed through Vercel after repository connection is enabled in the Vercel project.
+
+The repository includes an automated validation workflow that verifies required files, JavaScript syntax, Vercel configuration, and core operational wiring on every push or pull request to `main`.
+
 ## Operational capabilities demonstrated
 - Dynamic safe-capacity computation across multiple constraints
 - Governing-constraint identification
@@ -23,6 +31,10 @@ https://holy-sites-capacity-resilience-qb9avqfw7.vercel.app
 - Decision Evidence Record with SHA-256 input and trace hashes
 - Arabic and English interfaces
 - Downloadable evidence record
+
+## Public Repository Boundary
+
+This repository is intentionally selective. It demonstrates the operating concept without publishing the full engineering specification, the complete 220-feature register, proprietary algorithm implementations, training-model internals, protected configuration, or trade-secret material.
 
 ## Intellectual Property
 All rights reserved to Eng. Mohamed A. S. Rihan.
