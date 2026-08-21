@@ -1,0 +1,41 @@
+name: Validate Operational MVP
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        run: |
+          test -f index.html
+          test -f app.js
+          test -f style.css
+          test -f vercel.json
+          test -f README.md
+
+      - name: Validate JavaScript syntax
+        run: node --check app.js
+
+      - name: Validate Vercel configuration JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('vercel.json','utf8')); console.log('vercel.json valid')"
+
+      - name: Verify operational MVP wiring
+        run: |
+          grep -q 'app.js' index.html
+          grep -q 'style.css' index.html
+          grep -q 'Dynamic Safe Capacity' index.html
+          grep -q 'Decision Evidence Record' index.html
+          grep -q 'SHA-256' README.md
+          echo 'Operational MVP wiring verified.'
